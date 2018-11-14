@@ -1,0 +1,40 @@
+@media only screen and (min-width: 1024px) {
+  #body_container {
+    position: absolute;
+    top: 65px;
+    left: 5px;
+    right: 5px;
+    width: 80%;
+    margin: auto;
+  }
+  .slide img {
+    height: 470px;
+  }
+  .thumbs-wrapper {
+    margin: -5 !important;
+  }
+}
+@media (max-width: 1023px) and (min-width: 426px) {
+  #body_container {
+    position: absolute;
+    top: 100px;
+    left: 5px;
+    right: 5px;
+    width: 90%;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #body_container {
+    position: absolute;
+    top: 160px;
+    left: 5px;
+    right: 5px;
+  }
+  .footer_text_body {
+    display: none;
+  }
+  .slide img {
+    height: 280px;
+  }
+}

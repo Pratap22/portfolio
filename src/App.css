@@ -1,3 +1,4 @@
+@import '../node_modules/react-responsive-carousel/lib/styles/carousel.min.css';
 .App {
   text-align: center;
 }
