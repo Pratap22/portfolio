@@ -3,10 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "firebase": "^5.5.8",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
+    "react-loading": "^2.0.3",
+    "react-redux": "^5.1.1",
     "react-responsive-carousel": "^3.1.43",
     "react-scripts": "2.1.1",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
     "semantic-ui": "^2.4.2"
   },
   "scripts": {

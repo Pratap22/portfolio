@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+.information div:nth-child(1) a,
+.information div:nth-child(2) a {
+  cursor: pointer;
+  color: #4869bd;
+}
 @media only screen and (min-width: 1024px) {
   .header_image {
-    max-height: 80px;
+    max-height: 75px;
   }
   .header_image img {
     width: auto;
@@ -17,10 +22,6 @@
     margin-right: 10px;
   }
 
-  .social_icons p {
-    color: #6f1cbd;
-    margin: -0.5em 0.5em 0 0;
-  }
   #nav_bar {
     justify-content: space-between;
     width: 81%;
@@ -33,13 +34,22 @@
     margin-top: 9px;
     text-shadow: 1px 1px 1px #6f1cbd, 0 0 0.2em #6f1cbd;
   }
+  .header_image a:nth-child(2) {
+    display: none;
+  }
+  .information {
+    margin-right: 4px !important;
+  }
+  .information div {
+    margin-left: 5px;
+  }
 }
 @media (max-width: 1023px) and (min-width: 426px) {
   .header_image {
-    max-height: 120px;
+    max-height: 100px;
   }
   .header_image img {
-    width: auto;
+    width: 90%;
     height: 100%;
   }
   .social_icons img {
@@ -47,10 +57,6 @@
     width: auto;
   }
 
-  .social_icons p {
-    color: #6f1cbd;
-    margin: -0.5em 0.5em 0 0;
-  }
   #nav_bar {
     justify-content: space-between;
     width: 90%;
@@ -59,10 +65,13 @@
   .header_text {
     display: none;
   }
+  .header_image a:nth-child(2) {
+    display: none;
+  }
 }
 @media only screen and (max-width: 425px) {
   .header_image {
-    max-height: 150px;
+    max-height: 140px;
   }
   .header_image img {
     width: auto;
@@ -72,16 +81,20 @@
     margin-top: 2.5em;
     width: auto;
   }
-
-  .social_icons p {
-    color: #4869bd;
-    margin: -0.6em 0.5em 0 0;
-  }
   #nav_bar {
     justify-content: space-between !important;
     width: 100%;
   }
   .header_text {
     display: none;
+  }
+  .header_image a:nth-child(1) {
+    display: none;
+  }
+  .information div {
+    margin-left: 5px;
+  }
+  .information {
+    margin-right: 4px !important;
   }
 }
