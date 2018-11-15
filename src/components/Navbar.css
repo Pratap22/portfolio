@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-.information div:nth-child(1) a,
-.information div:nth-child(2) a {
+.information div:nth-child(1) span,
+.information div:nth-child(2) span {
   cursor: pointer;
   color: #4869bd;
+}
+.ReactModal__Overlay {
+  z-index: 2;
+  background-color: transparent !important;
+}
+.ReactModal__Content {
+  left: 180px !important;
+  right: 180px !important;
 }
 @media only screen and (min-width: 1024px) {
   .header_image {
@@ -42,6 +50,11 @@
   }
   .information div {
     margin-left: 5px;
+  }
+  .ReactModal__Content {
+    left: 64% !important;
+    bottom: auto !important;
+    top: 12% !important;
   }
 }
 @media (max-width: 1023px) and (min-width: 426px) {
@@ -96,5 +109,11 @@
   }
   .information {
     margin-right: 4px !important;
+  }
+  .ReactModal__Content {
+    left: 10% !important;
+    bottom: auto !important;
+    top: 19% !important;
+    right: 15% !important;
   }
 }

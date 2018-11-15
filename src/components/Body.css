@@ -52,7 +52,7 @@
 @media only screen and (max-width: 425px) {
   #body_container {
     position: absolute;
-    top: 160px;
+    top: 135px;
     left: 5px;
     right: 5px;
   }

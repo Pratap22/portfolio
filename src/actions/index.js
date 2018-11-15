@@ -5,8 +5,13 @@ export const DataActions = {
   FETCH_IMAGES_SUCCESS: 'FETCH_IMAGES_SUCCESS',
   FETCH_IMAGES_ERROR: 'FETCH_IMAGES_ERROR'
 };
+// export const ImageActions = {
+//   FETCH_IMAGES_REQUEST: 'FETCH_IMAGES_REQUEST',
+//   FETCH_IMAGES_SUCCESS: 'FETCH_IMAGES_SUCCESS',
+//   FETCH_IMAGES_ERROR: 'FETCH_IMAGES_ERROR'
+// };
 
-export function fetchImages() {
+export function fetchData() {
   //just return function for thunk to handle
   return function(dispatch, getState) {
     //thunk calls this function with dispatch and getState

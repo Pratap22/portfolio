@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import './Body.css';
 import { Carousel } from 'react-responsive-carousel';
 import { connect } from 'react-redux';
-import { fetchImages } from '../actions';
+import { fetchData } from '../actions';
 import { getIsLoading, getImages } from '../reducers/dataReducer';
 import ReactLoading from 'react-loading';
 
 class Body extends Component {
   componentDidMount() {
     //fetch images from firebase
-    this.props.fetchImages();
+    this.props.fetchData();
   }
   getImage(images) {
     var imagesArr = [];
@@ -56,7 +56,7 @@ const mapStateToProps = state => {
 
 const connectedBody = connect(
   mapStateToProps,
-  { fetchImages }
+  { fetchData }
 )(Body);
 
 export default connectedBody;
