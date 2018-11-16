@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 .information div:nth-child(1) span,
-.information div:nth-child(2) span {
+.information div:nth-child(3) span,
+.loading_info div:nth-child(1) span,
+.loading_info div:nth-child(3) span {
   cursor: pointer;
   color: #4869bd;
+}
+.information div:nth-child(2) {
+  color: #4869bd;
+}
+.information div,
+.loading_info div {
+  margin-left: 7px;
 }
 .ReactModal__Overlay {
   z-index: 2;
@@ -11,7 +20,39 @@
 .ReactModal__Content {
   left: 180px !important;
   right: 180px !important;
+  background-color: #f7fdff !important;
 }
+.info_modal {
+  background-color: transparent !important;
+}
+.info_modal div,
+.about_modal {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  line-height: 23px;
+}
+.info_modal div strong {
+  color: #4869bd;
+}
+.close_button {
+  width: 60px;
+  height: 35px;
+  background: linear-gradient(to bottom, #4eb5e5 0%, #389ed5 100%);
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  border-bottom: 4px solid #2b8bc6;
+  color: #fbfbfb;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  font-size: 15px;
+  text-align: center;
+  text-indent: 5px;
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 1024px) {
   .header_image {
     max-height: 75px;
@@ -45,16 +86,22 @@
   .header_image a:nth-child(2) {
     display: none;
   }
-  .information {
+  .information,
+  .loading_info {
     margin-right: 4px !important;
   }
-  .information div {
+  .information div,
+  .loading_info div {
     margin-left: 5px;
   }
   .ReactModal__Content {
     left: 64% !important;
     bottom: auto !important;
     top: 12% !important;
+  }
+  .info_modal img {
+    width: 100%;
+    max-height: 100px;
   }
 }
 @media (max-width: 1023px) and (min-width: 426px) {
@@ -81,6 +128,13 @@
   .header_image a:nth-child(2) {
     display: none;
   }
+  .information div,
+  .loading_info div {
+    margin-left: 5px;
+  }
+  .info_modal img {
+    display: none;
+  }
 }
 @media only screen and (max-width: 425px) {
   .header_image {
@@ -104,10 +158,12 @@
   .header_image a:nth-child(1) {
     display: none;
   }
-  .information div {
+  .information div,
+  .loading_info div {
     margin-left: 5px;
   }
-  .information {
+  .information,
+  .loading_info {
     margin-right: 4px !important;
   }
   .ReactModal__Content {
@@ -115,5 +171,11 @@
     bottom: auto !important;
     top: 19% !important;
     right: 15% !important;
+  }
+  .info_modal img {
+    display: none;
+  }
+  .info_modal h4 {
+    margin-top: 5% !important;
   }
 }

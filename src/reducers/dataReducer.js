@@ -1,8 +1,7 @@
 import { DataActions } from '../actions';
 const initialState = {
   isLoading: false,
-  images: [],
-  information: ''
+  images: []
 };
 // reducer
 const dataReducer = (state = initialState, action) => {
@@ -15,8 +14,7 @@ const dataReducer = (state = initialState, action) => {
       return {
         ...state,
         isLoading: false,
-        images: action.payload.portfolio.images,
-        information: action.payload.portfolio.information
+        images: action.payload.portfolio.images
       };
     case DataActions.FETCH_IMAGES_ERROR:
       return { ...state, isLoading: false };
@@ -29,4 +27,3 @@ export default dataReducer;
 
 export const getIsLoading = state => state.dataReducer.isLoading;
 export const getImages = state => state.dataReducer.images;
-export const getInfo = state => state.dataReducer.information;

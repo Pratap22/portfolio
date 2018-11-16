@@ -15,7 +15,7 @@
     text-align: center !important;
     position: fixed;
     bottom: 0;
-    left: 0.7em;
-    position: fixed;
+    background-color: white;
+    width: 100%;
   }
 }
