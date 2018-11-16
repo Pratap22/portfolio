@@ -1,0 +1,21 @@
+@media only screen and (min-width: 940px) {
+  .footer_text {
+    display: none;
+  }
+  .about_info {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .footer_text {
+    font-size: 15px;
+    text-align: center !important;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+  }
+}
