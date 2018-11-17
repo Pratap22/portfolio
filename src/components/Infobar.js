@@ -36,7 +36,6 @@ class Infobar extends Component {
     }
   }
   render() {
-    console.log(this.props.isLoading);
     if (this.props.isLoading) {
       return (
         <div className="flexrow end-xs loading_info">
@@ -107,7 +106,6 @@ class Infobar extends Component {
 ReactModal.setAppElement('#root');
 
 const mapStateToProps = state => {
-  console.log(state);
   return {
     isLoading: getIsLoading(state),
     information: getInfo(state)
