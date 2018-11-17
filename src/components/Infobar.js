@@ -55,7 +55,7 @@ class Infobar extends Component {
         <div>
           <span onClick={this.handleOpenModal.bind(this, 'about')}>About me</span>
           <ReactModal isOpen={this.state.showModal} onRequestClose={this.handleCloseModal.bind(this, 'about')}>
-            <h4>About the Author:</h4>
+            <h4 className="author_info_head">About the Author:</h4>
             <div className="author_info">
               <div>
                 Hello, I'm <strong>Pratap Sharma</strong>
@@ -84,11 +84,15 @@ class Infobar extends Component {
               </div>
               <div>
                 <strong>Contact No.: </strong>
-                {this.props.information.phone}
+                <a href="whatsapp://send?text=Hi Pratap!&phone=+919774374913">{this.props.information.phone}</a>{' '}
+                (Whatsapp/Call)
               </div>
               <div>
                 <strong>Email: </strong>
-                {this.props.information.email}
+                <a href="mailto:sharma.pratap22@gmail.com" target="_top">
+                  {' '}
+                  {this.props.information.email}{' '}
+                </a>
               </div>
             </div>
             <button className="close_button" onClick={this.handleCloseModal.bind(this, 'contact')}>
