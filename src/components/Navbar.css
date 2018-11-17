@@ -16,6 +16,7 @@
 .ReactModal__Overlay {
   z-index: 2;
   background-color: transparent !important;
+  position: absolute;
 }
 .ReactModal__Content {
   right: 180px !important;
