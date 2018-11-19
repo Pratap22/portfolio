@@ -76,7 +76,9 @@ class Infobar extends Component {
                 alt="logo"
                 src="https://res.cloudinary.com/pratap2210/image/upload/v1542271669/Social/myImagenesWide.png"
               />
-              <h4>Contact:</h4>
+              <h4>
+                Contact: <strong>Pratap Sharma</strong>{' '}
+              </h4>
               <div>
                 <strong>Address: </strong>
                 {nl2br(this.props.information.add)}

@@ -31,7 +31,8 @@
   margin-bottom: 8px;
   line-height: 23px;
 }
-.info_modal div strong {
+.info_modal div strong,
+.info_modal h4 strong {
   color: #4869bd;
 }
 .author_info strong {
