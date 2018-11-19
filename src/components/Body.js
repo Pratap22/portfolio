@@ -16,8 +16,9 @@ class Body extends Component {
     images.forEach((image, index) => {
       imagesArr.push(
         <div key={`slider${index}`}>
-          <img className="car_img" alt="imgss" src={image} />
+          <img className="car_img" alt="imgss" src={image.name} />
           <p className="legend">© My Imagenes</p>
+          <p className="legend">{image.caption}</p>
         </div>
       );
     });

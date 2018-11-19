@@ -14,6 +14,11 @@
     width: 12% !important;
     margin-left: -47% !important;
     margin-bottom: -2% !important;
+    opacity: 1 !important;
+  }
+  .slide div p:nth-child(3) {
+    width: 17% !important;
+    margin-left: 30% !important;
   }
   .thumbs-wrapper {
     margin: -5 !important;
@@ -41,6 +46,11 @@
     width: 25% !important;
     margin-left: -47% !important;
     margin-bottom: -2% !important;
+    opacity: 1 !important;
+  }
+  .slide div p:nth-child(3) {
+    width: 35% !important;
+    margin-left: 12% !important;
   }
   #body_container div div:nth-child(3) {
     margin-top: -20px;
@@ -69,5 +79,10 @@
     width: 30% !important;
     margin-left: -49% !important;
     margin-bottom: -9% !important;
+    opacity: 0.8 !important;
+  }
+  .slide div p:nth-child(3) {
+    width: 40% !important;
+    margin-left: 8% !important;
   }
 }
