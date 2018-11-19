@@ -9,8 +9,7 @@ import './flexbogrid.css';
 const metaTags = {
   title: 'My Imagenes',
   desc: 'Website for Photographer and Web Developer Pratap Sharma',
-  //url: 'https://www.myimagenes.me/',
-  url: 'http://localhost:3000/',
+  url: 'https://www.myimagenes.me/',
   image: '/logo/myImagenes.png'
 };
 
