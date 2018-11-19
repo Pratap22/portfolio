@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Helmet from 'react-helmet';
+import MetaTags from 'react-meta-tags';
 import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -17,19 +17,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Helmet
-          title={metaTags.title}
-          meta={[
-            { name: 'description', content: metaTags.desc },
-            { property: 'og:description', content: metaTags.desc },
-            { property: 'og:title', content: metaTags.title },
-            { property: 'og:url', content: metaTags.url },
-            { property: 'og:image', content: metaTags.image },
-            { itemprop: 'name', content: metaTags.title },
-            { itemprop: 'description', content: metaTags.desc },
-            { itemprop: 'image', content: metaTags.image }
-          ]}
-        />
+        <MetaTags>
+          <title>{metaTags.title}</title>
+          <meta name="description" content={metaTags.desc} />
+          <meta property="og:title" content={metaTags.title} />
+          <meta property="og:image" content={metaTags.image} />
+          <meta property="og:url" content={metaTags.url} />
+        </MetaTags>
         <Navbar />
         <Body />
         <Footer />

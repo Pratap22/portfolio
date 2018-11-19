@@ -8,6 +8,7 @@
     "react-dom": "^16.6.1",
     "react-helmet": "^5.2.0",
     "react-loading": "^2.0.3",
+    "react-meta-tags": "^0.7.2",
     "react-modal": "^3.6.1",
     "react-newline-to-break": "^1.0.6",
     "react-redux": "^5.1.1",
